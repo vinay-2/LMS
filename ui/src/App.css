@@ -1,0 +1,305 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* body{
+  background: #bdc3c7;
+  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  
+  background: linear-gradient(to right, #2c3e50, #bdc3c7); 
+} */
+
+.form{
+  background-color: white;
+  border-radius: 5px;
+  width: 550px;
+  margin: 20px auto;
+  padding: 20px;
+  /* height: 600px; */
+}
+
+/* .form-body{
+  text-align: left;
+  padding: 20px 10px;
+} */
+
+.form-body > *{
+  padding: 5px;
+}
+
+.form__label{
+  width: 40%;
+}
+
+.form_input{
+  width: 60%;
+}
+
+.footer{
+  text-align: center;
+}
+/* Center form container and add styling */
+.form {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the form body to be vertically spaced */
+.form-body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label styling for clarity */
+.form__label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333333;
+  font-size: 0.9rem;
+}
+
+/* Input styling with padding and subtle border */
+.form__input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+/* Add focus effect on inputs */
+.form__input:focus {
+  border-color: #6200ea;
+  outline: none;
+  box-shadow: 0 0 4px rgba(98, 0, 234, 0.2);
+}
+
+/* Footer container for alignment */
+.footer {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+/* Button styling */
+.btn {
+  background-color: #6200ea;
+  color: #ffffff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+/* Button hover effect */
+.btn:hover {
+  background-color: #3700b3;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 480px) {
+  .form {
+    padding: 1.5rem;
+  }
+
+  .form__input {
+    padding: 0.7rem;
+  }
+
+  .btn {
+    padding: 0.7rem;
+  }
+}
+
+
+/* Container for the form */
+.form-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Heading */
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form group container */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Label styles */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Input styles */
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+/* Input focus styles */
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button styles */
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Error message */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+/* Success message */
+.success-message {
+  color: green;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+/* Logout Container */
+.logout-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+}
+
+/* Logout Heading */
+.logout-heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Button Container */
+.logout-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+/* Yes Button */
+.logout-yes-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-yes-button:hover {
+  background-color: #e60000;
+}
+
+.logout-yes-button:active {
+  background-color: #cc0000;
+  transform: scale(0.95);
+}
+
+/* Cancel Button */
+.logout-cancel-button {
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-cancel-button:hover {
+  background-color: #bbb;
+}
+
+.logout-cancel-button:active {
+  background-color: #999;
+  transform: scale(0.95);
+}
